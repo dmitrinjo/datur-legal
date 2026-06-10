@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datur — Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      background: #060d0c;
+      color: #c9d6d2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 96px; }
+    h1 { color: #fff; font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+    h2 { color: #5fe3c8; font-size: 19px; margin: 38px 0 10px; }
+    .meta { color: #6f817c; font-size: 13px; margin-bottom: 34px; }
+    p, li { font-size: 15.5px; }
+    a { color: #5fe3c8; }
+    ul { padding-left: 20px; }
+    li { margin: 6px 0; }
+    strong { color: #e4efeb; }
+    .note { border-left: 2px solid #1c9c84; background: #0b1716; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 18px 0; color: #9fb2ad; font-size: 14px; }
+    footer { margin-top: 56px; color: #54635f; font-size: 13px; border-top: 1px solid #16211f; padding-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Datur · Last updated: 10 June 2026</p>
+
+    <p>Datur is a behavioral interception app that adds friction before you open compulsive apps. This policy explains what data the app handles and how. The short version: <strong>Datur is built offline-first and reads as little as physically possible.</strong></p>
+
+    <h2>1. What Datur observes</h2>
+    <p>To intercept an app launch, Datur's Accessibility Service detects which app you are about to open. It observes <strong>only the package name</strong> of the foreground app (for example, <code>com.instagram.android</code>).</p>
+    <ul>
+      <li>Datur <strong>does not read screen content</strong> — content retrieval is disabled at the system level.</li>
+      <li>Datur does not read your messages, posts, keystrokes, passwords, or any in-app activity.</li>
+      <li>Datur does not record your screen and does not take screenshots.</li>
+    </ul>
+
+    <h2>2. Data stored on your device</h2>
+    <p>The following is stored <strong>locally on your device</strong> and is the source of truth:</p>
+    <ul>
+      <li>Your settings (delay durations, which apps you chose to monitor, modes).</li>
+      <li>Interception events — a timestamp, the package name involved, and the outcome (for example: abandoned, proceeded, locked). This powers your statistics.</li>
+      <li>An optional display name you enter yourself.</li>
+    </ul>
+
+    <h2>3. Optional cloud sync</h2>
+    <p>If you sign in and enable sync, the data described in Section 2 may be backed up to our cloud provider (Supabase) so it can be restored or shown across sessions. This is used solely to provide the service to you. If you do not sign in, your data stays on your device.</p>
+
+    <h2>4. Subscriptions</h2>
+    <p>Paid subscriptions are processed by <strong>Google Play Billing</strong>. Datur never sees or stores your payment card details. We receive only the subscription status needed to unlock paid features.</p>
+
+    <h2>5. What we do NOT do</h2>
+    <ul>
+      <li>We do not sell your data.</li>
+      <li>We do not use your data for advertising.</li>
+      <li>We do not share your data with third parties except the infrastructure providers (Google Play, Supabase) strictly needed to run the service.</li>
+    </ul>
+
+    <h2>6. Permissions and why they are needed</h2>
+    <ul>
+      <li><strong>Accessibility Service</strong> — to detect app launches and trigger interception. Package names only.</li>
+      <li><strong>Display over other apps</strong> — to show the full-screen delay/lock overlay.</li>
+      <li><strong>Usage access</strong> — to read app usage for statistics.</li>
+      <li><strong>Foreground service</strong> — to keep the interception engine running reliably.</li>
+    </ul>
+
+    <h2>7. Your choices</h2>
+    <p>You can disable the Accessibility Service at any time in Android settings, which stops all interception and observation. You can request deletion of any synced data by contacting us at the address below.</p>
+
+    <h2>8. Children</h2>
+    <p>Datur is not directed at children under 13 and we do not knowingly collect data from them.</p>
+
+    <h2>9. Changes</h2>
+    <p>We may update this policy. Material changes will be reflected by the "Last updated" date above.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions or data requests: <a href="mailto:dmitrinjo@gmail.com">dmitrinjo@gmail.com</a></p>
+
+    <div class="note">This document is provided as a clear-language summary of how Datur handles data. It does not constitute legal advice; review with a qualified professional before publishing.</div>
+
+    <footer>© 2026 Datur. <a href="terms.html">Terms of Use</a></footer>
+  </div>
+</body>
+</html>
