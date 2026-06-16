@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datur — Data Deletion Request</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      background: #060d0c;
+      color: #c9d6d2;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 56px 22px 96px; }
+    h1 { color: #fff; font-size: 30px; margin: 0 0 6px; letter-spacing: -0.5px; }
+    h2 { color: #5fe3c8; font-size: 19px; margin: 38px 0 10px; }
+    .meta { color: #6f817c; font-size: 13px; margin-bottom: 34px; }
+    p, li { font-size: 15.5px; }
+    a { color: #5fe3c8; }
+    ul, ol { padding-left: 20px; }
+    li { margin: 6px 0; }
+    strong { color: #e4efeb; }
+    .note { border-left: 2px solid #1c9c84; background: #0b1716; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 18px 0; color: #9fb2ad; font-size: 14px; }
+    .step { border: 1px solid #16211f; background: #0b1716; padding: 14px 16px; border-radius: 8px; margin: 10px 0; }
+    .step strong { color: #5fe3c8; }
+    footer { margin-top: 56px; color: #54635f; font-size: 13px; border-top: 1px solid #16211f; padding-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Data Deletion Request</h1>
+    <p class="meta">Datur · Last updated: 16 June 2026</p>
+
+    <p>Datur is built offline-first: by default, all your data lives only on your device, and you can delete it instantly at any time. This page explains exactly how to delete your data, what gets deleted, and what happens if you've enabled optional cloud sync.</p>
+
+    <h2>1. Delete your data directly in the app (fastest)</h2>
+    <p>No account or sign-in is needed for this — it works for every Datur user:</p>
+
+    <div class="step"><strong>Step 1.</strong> Open Datur and go to <strong>Settings</strong>.</div>
+    <div class="step"><strong>Step 2.</strong> Tap <strong>Account</strong>.</div>
+    <div class="step"><strong>Step 3.</strong> Tap <strong>Delete all data</strong>.</div>
+    <div class="step"><strong>Step 4.</strong> Confirm the action.</div>
+
+    <p>This immediately and permanently erases all local data described in Section 3 from your device. If you had cloud sync enabled, it also queues your synced data for deletion from our backend (see Section 4).</p>
+
+    <h2>2. Request deletion by email</h2>
+    <p>If you no longer have the app installed, or prefer to request deletion directly, email us:</p>
+    <div class="step">
+      <strong>To:</strong> <a href="mailto:dmitrinjo@gmail.com?subject=Datur%20Data%20Deletion%20Request">dmitrinjo@gmail.com</a><br>
+      <strong>Subject:</strong> Datur Data Deletion Request<br>
+      <strong>Please include:</strong> the email address you used for sync (if any), and confirmation that you want all associated data deleted.
+    </div>
+    <p>We process email requests within <strong>7 business days</strong> and confirm by email once complete.</p>
+
+    <h2>3. Data deleted from your device</h2>
+    <p>Tapping "Delete all data" removes the following, stored locally by Android Room on your device:</p>
+    <ul>
+      <li>App launch and interception events (package names, timestamps, outcomes such as abandoned/proceeded/locked)</li>
+      <li>Intent/trigger selections (e.g. Bored, Habit, Stressed, Escaping)</li>
+      <li>Focus Session records (start/end times)</li>
+      <li>App preferences (monitored apps, mode settings, delay durations)</li>
+      <li>Any display name you entered</li>
+    </ul>
+    <p>This data is deleted <strong>immediately and irreversibly</strong> — there is no recovery period for local deletion.</p>
+
+    <h2>4. Data deleted from our servers (only if Cloud Sync was enabled)</h2>
+    <p>Datur does not require an account. If you explicitly enabled <strong>Cloud Sync</strong> in Settings, a copy of the data in Section 3 was backed up to our backend (Supabase) under an anonymous identifier — never your name or email.</p>
+    <ul>
+      <li>Deletion requests (via app or email) remove this backup within <strong>30 days</strong>.</li>
+      <li>If you uninstall the app without requesting deletion, backups are automatically purged after <strong>90 days</strong> of inactivity.</li>
+    </ul>
+
+    <h2>5. What we cannot delete on your behalf</h2>
+    <ul>
+      <li><strong>Google Play purchase/billing history</strong> — held by Google. Manage or request deletion via your <a href="https://play.google.com/store/account" target="_blank">Google Play account</a>.</li>
+      <li><strong>RevenueCat subscription metadata</strong> — our billing processor. See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's privacy policy</a> for their retention practices.</li>
+    </ul>
+
+    <h2>6. Questions</h2>
+    <p>Contact <strong>Dmitrijs Drozds</strong>, developer of Datur, at <a href="mailto:dmitrinjo@gmail.com">dmitrinjo@gmail.com</a> for any privacy or deletion questions.</p>
+
+    <div class="note">This document is provided as a clear-language summary of how Datur handles data deletion. It does not constitute legal advice; review with a qualified professional before publishing.</div>
+
+    <footer>© 2026 Datur. <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></footer>
+  </div>
+</body>
+</html>
