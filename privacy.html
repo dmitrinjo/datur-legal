@@ -29,7 +29,7 @@
 <body>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="meta">Datur · Last updated: 10 June 2026</p>
+    <p class="meta">Datur · Last updated: 5 September 2026</p>
 
     <p>Datur is a behavioral interception app that adds friction before you open compulsive apps. This policy explains what data the app handles and how. The short version: <strong>Datur is built offline-first and reads as little as physically possible.</strong></p>
 
@@ -55,14 +55,22 @@
     <h2>4. Subscriptions</h2>
     <p>Paid subscriptions are processed by <strong>Google Play Billing</strong>. Datur never sees or stores your payment card details. We receive only the subscription status needed to unlock paid features.</p>
 
-    <h2>5. What we do NOT do</h2>
+    <h2>5. Diagnostics, analytics, and fraud prevention</h2>
+    <p>To keep Datur reliable and to prevent abuse of free trials, we use the following from Google (Firebase):</p>
     <ul>
-      <li>We do not sell your data.</li>
-      <li>We do not use your data for advertising.</li>
-      <li>We do not share your data with third parties except the infrastructure providers (Google Play, Supabase) strictly needed to run the service.</li>
+      <li><strong>Crash reporting (Firebase Crashlytics)</strong> — if the app crashes, a crash report containing a stack trace and basic device/app info is sent so we can fix the bug. This does not include your interception data, messages, or screen content.</li>
+      <li><strong>Analytics (Firebase Analytics)</strong> — we log a small number of app events, such as when your subscription status changes, to understand how the app is used in aggregate.</li>
+      <li><strong>Device identifier for trial fraud prevention</strong> — when you start a free trial, Datur sends a one-way SHA-256 hash of your device's Android ID to our server. This lets us detect the same device claiming multiple trials; the original identifier cannot be recovered from the hash.</li>
     </ul>
 
-    <h2>6. Permissions and why they are needed</h2>
+    <h2>6. What we do NOT do</h2>
+    <ul>
+      <li>We do not sell your data.</li>
+      <li>We do not use your data for advertising or ad targeting.</li>
+      <li>We do not share your data with third parties except the infrastructure providers strictly needed to run the service: Google Play (billing), Supabase (optional cloud sync), and Firebase (crash reporting and analytics, described in Section 5).</li>
+    </ul>
+
+    <h2>7. Permissions and why they are needed</h2>
     <ul>
       <li><strong>Accessibility Service</strong> — to detect app launches and trigger interception. Package names only.</li>
       <li><strong>Display over other apps</strong> — to show the full-screen delay/lock overlay.</li>
@@ -70,16 +78,16 @@
       <li><strong>Foreground service</strong> — to keep the interception engine running reliably.</li>
     </ul>
 
-    <h2>7. Your choices</h2>
+    <h2>8. Your choices</h2>
     <p>You can disable the Accessibility Service at any time in Android settings, which stops all interception and observation. You can delete your data at any time — in-app or without the app — see <a href="data-deletion.html">Data Deletion Request</a>.</p>
 
-    <h2>8. Children</h2>
+    <h2>9. Children</h2>
     <p>Datur is not directed at children under 13 and we do not knowingly collect data from them.</p>
 
-    <h2>9. Changes</h2>
+    <h2>10. Changes</h2>
     <p>We may update this policy. Material changes will be reflected by the "Last updated" date above.</p>
 
-    <h2>10. Contact</h2>
+    <h2>11. Contact</h2>
     <p>Questions or data requests: <a href="mailto:support.datur@gmail.com">support.datur@gmail.com</a></p>
 
     <div class="note">This document is provided as a clear-language summary of how Datur handles data. It does not constitute legal advice; review with a qualified professional before publishing.</div>
